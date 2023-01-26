@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone-no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="none">
+    <title>Food</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230126191318">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230126191318">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header _lock-padding">
+            <div class="container">
+                <div class="header-top">
+                    <div class="header-top-lang">
+                        <a href="#" class="header-top-lang__item active">En</a>
+                        <a href="#" class="header-top-lang__item">Ru</a>
+                        <a href="#" class="header-top-lang__item">Esp</a>
+                    </div>
+                    <a href="#header-popup" class="header-top__link popup-link">Online ordering</a>
+                    <div class="header-menu-icon">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom__column header-bottom__column_left">
+                        <nav class="header-bottom-nav header-bottom-nav_left">
+                            <ul class="header-bottom-menu">
+                                <li><a href="#" data-goto=".about" class="header-bottom-menu__link">About</a></li>
+                                <li><a href="#" data-goto=".menus" class="header-bottom-menu__link">Menus</a></li>
+                                <li><a href="#" data-goto=".service" class="header-bottom-menu__link">Service info</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-bottom__column header-bottom__column_logo">
+                        <a href="#" class="header-logo">
+                            <span class="header-logo__text">Food</span>
+                            <span class="header-logo__image"><img src="img/logo.svg" alt="logo"></span>
+                            <span class="header-logo__text">Catering</span>
+                        </a>
+                    </div>
+                    <div class="header-bottom__column header-bottom__column_right">
+                        <nav class="header-bottom-nav header-bottom-nav_right">
+                            <ul class="header-bottom-menu">
+                                <li><a href="#" data-goto=".gallery" class="header-bottom-menu__link">Gallery</a></li>
+                                <li><a href="#" data-goto=".friends" class="header-bottom-menu__link">Friends</a></li>
+                                <li><a href="#" data-goto=".contacts" class="header-bottom-menu__link">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-menu"></div>
+            </div>
+            <div id="header-popup" class="header-popup">
+                <div class="header-popup-body">
+                    <div class="header-popup-content">
+                        <div class="header-popup-close">
+                            <a href="#" class="_close-popup">&#10006;</a>
+                        </div>
+                        <div class="header-popup-form">
+                            <div class="header-popup-form__title">Online ordering</div>
+                            <form action="#" method="post" name="formOrder" class="header-popup-form-body">
+                                <div class="header-popup-form-line">
+                                    <input autocomplete="off" placeholder="Name" type="text" name="userName"
+                                        class="input _req">
+                                </div>
+                                <div class="header-popup-form-line">
+                                    <input autocomplete="off" placeholder="Phone number" type="text" name="userPhone"
+                                        class="input _req">
+                                </div>
+                                <div class="header-popup-form-line">
+                                    <textarea autocomplete="off" placeholder="Your message" name="userMessage"
+                                        class="input _req"></textarea>
+                                </div>
+                                <div class="header-popup-form-button">
+                                    <button type="submit" class="btn btn_black">Create order</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="about">
+                <div class="private">
+                    <div class="private-image">
+                        <picture>
+                            <source srcset="img/about/01.webp" type="image/webp"><img src="img/about/01.jpg"
+                                alt="about">
+                        </picture>
+                    </div>
+                    <div class="private-body private-body_container">
+                        <div class="private-body__title">
+                            <h1>Corporate catering</h1>
+                        </div>
+                        <div class="private-body__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                            iste, molestiae rem doloribus distinctio voluptate.</div>
+                        <div class="private-body-buttons">
+                            <a href="#" class="private-body-buttons__btn btn btn_white">Get in touch</a>
+                            <a href="#" class="private-body-buttons__link btn btn_black">View menus</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="menus">
+                <div class="container container_md container_sm">
+                    <div class="products">
+                        <div class="products-row">
+                            <div class="products-column">
+                                <div class="products-item">
+                                    <a href="#" class="products-item__image">
+                                        <picture>
+                                            <source srcset="img/products/01.webp" type="image/webp"><img
+                                                src="img/products/01.jpg" alt="product">
+                                        </picture>
+                                    </a>
+                                    <h3 class="products-item__title">
+                                        <a href="#">Private catering</a>
+                                    </h3>
+                                    <div class="products-item__text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Omnis id dolor doloremque debitis ullam rem laudantium voluptates beatae
+                                        ex neque!</div>
+                                    <div class="products-item-buttons">
+                                        <a href="#" class="products-item-buttons__btn btn btn_black">Get a quote</a>
+                                        <a href="#" class="products-item-buttons__link btn btn_white">View menus</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-column">
+                                <div class="products-item">
+                                    <a href="#" class="products-item__image">
+                                        <picture>
+                                            <source srcset="img/products/02.webp" type="image/webp"><img
+                                                src="img/products/02.jpg" alt="product">
+                                        </picture>
+                                    </a>
+                                    <h3 class="products-item__title">
+                                        <a href="#">Corporate catering</a>
+                                    </h3>
+                                    <div class="products-item__text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Sapiente porro deleniti autem minus voluptatum aliquam doloremque natus
+                                        ipsam quas! Eius.</div>
+                                    <div class="products-item-buttons">
+                                        <a href="#" class="products-item-buttons__btn btn btn_black">Get a quote</a>
+                                        <a href="#" class="products-item-buttons__link btn btn_white">View menus</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-column">
+                                <div class="products-item">
+                                    <a href="#" class="products-item__image">
+                                        <picture>
+                                            <source srcset="img/products/03.webp" type="image/webp"><img
+                                                src="img/products/03.jpg" alt="product">
+                                        </picture>
+                                    </a>
+                                    <h3 class="products-item__title">
+                                        <a href="#">Online ordering</a>
+                                    </h3>
+                                    <div class="products-item__text">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                        elit. Possimus, delectus repellendus reprehenderit numquam cumque officiis nobis
+                                        accusamus debitis deserunt fugit.</div>
+                                    <div class="products-item-buttons">
+                                        <a href="#" class="products-item-buttons__btn btn btn_black">Get a quote</a>
+                                        <a href="#" class="products-item-buttons__link btn btn_white">View menus</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-column">
+                                <div class="products-item">
+                                    <a href="#" class="products-item__image">
+                                        <picture>
+                                            <source srcset="img/products/04.webp" type="image/webp"><img
+                                                src="img/products/04.jpg" alt="product">
+                                        </picture>
+                                    </a>
+                                    <h3 class="products-item__title">
+                                        <a href="#">Wedding catering</a>
+                                    </h3>
+                                    <div class="products-item__text">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                        elit. Possimus, delectus repellendus reprehenderit numquam cumque officiis nobis
+                                        accusamus debitis deserunt fugit.</div>
+                                    <div class="products-item-buttons">
+                                        <a href="#" class="products-item-buttons__btn btn btn_black">Get a quote</a>
+                                        <a href="#" class="products-item-buttons__link btn btn_white">View menus</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="service">
+                <div class="service-top">
+                    <div class="service-top__title">
+                        <h2>Why choose us?</h2>
+                    </div>
+                    <div class="service-top__image">
+                        <picture>
+                            <source srcset="img/service/01.webp" type="image/webp"><img src="img/service/01.jpg"
+                                alt="service">
+                        </picture>
+                    </div>
+                </div>
+                <div class="service-body">
+                    <div class="container">
+                        <div class="service-body-row">
+                            <div class="service-body-column">
+                                <div class="service-body-item">
+                                    <div class="service-body-item__icon">
+                                        <img src="img/service/icons/02.svg" alt="icon">
+                                    </div>
+                                    <div class="service-body-item-box">
+                                        <div class="service-body-item-box__title">Reliable and flawless</div>
+                                        <div class="service-body-item-box__text">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Blanditiis nobis labore esse inventore nulla.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-body-column">
+                                <div class="service-body-item">
+                                    <div class="service-body-item__icon">
+                                        <img src="img/service/icons/01.svg" alt="icon">
+                                    </div>
+                                    <div class="service-body-item-box">
+                                        <div class="service-body-item-box__title">Always fresh</div>
+                                        <div class="service-body-item-box__text">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Iusto quibusdam laboriosam in consequatur adipisci
+                                            recusandae.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-body-column">
+                                <div class="service-body-item">
+                                    <div class="service-body-item__icon">
+                                        <img src="img/service/icons/03.svg" alt="icon">
+                                    </div>
+                                    <div class="service-body-item-box">
+                                        <div class="service-body-item-box__title">Clean and healthy</div>
+                                        <div class="service-body-item-box__text">Lorem, ipsum dolor sit amet consectetur
+                                            adipisicing elit. Est eveniet ipsam, impedit dignissimos quis accusantium.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-body-column">
+                                <div class="service-body-item">
+                                    <div class="service-body-item__icon">
+                                        <img src="img/service/icons/04.svg" alt="icon">
+                                    </div>
+                                    <div class="service-body-item-box">
+                                        <div class="service-body-item-box__title">Fits any size and budget</div>
+                                        <div class="service-body-item-box__text">Lorem, ipsum dolor sit amet consectetur
+                                            adipisicing elit. Laborum qui at itaque porro quas commodi ea.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="gallery">
+                <div class="container container_sm">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="gallery-product-image">
+                                    <picture>
+                                        <source srcset="img/products/01.webp" type="image/webp"><img
+                                            src="img/products/01.jpg" alt="product">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery-product-image">
+                                    <picture>
+                                        <source srcset="img/products/02.webp" type="image/webp"><img
+                                            src="img/products/02.jpg" alt="product">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery-product-image">
+                                    <picture>
+                                        <source srcset="img/products/03.webp" type="image/webp"><img
+                                            src="img/products/03.jpg" alt="product">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery-product-image">
+                                    <picture>
+                                        <source srcset="img/products/04.webp" type="image/webp"><img
+                                            src="img/products/04.jpg" alt="product">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery-product-image">
+                                    <picture>
+                                        <source srcset="img/products/01.webp" type="image/webp"><img
+                                            src="img/products/01.jpg" alt="product">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="gallery-product-image">
+                                    <picture>
+                                        <source srcset="img/products/02.webp" type="image/webp"><img
+                                            src="img/products/02.jpg" alt="product">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <section class="friends">
+                <div class="friends-top">
+                    <div class="friends-top__title">
+                        <h2>Our friends</h2>
+                    </div>
+                </div>
+                <div class="container container_sm">
+                    <div class="friends-row">
+                        <div class="friends-column">
+                            <div class="friends-item">
+                                <div class="friends-item__image">
+                                    <img src="img/friends/01.svg" alt="icon">
+                                </div>
+                                <div class="friends-item__title">
+                                    <h3>Sea food</h3>
+                                </div>
+                                <div class="friends-item__text">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit. Beatae explicabo excepturi assumenda accusantium tenetur fugit.</div>
+                            </div>
+                        </div>
+                        <div class="friends-column">
+                            <div class="friends-item">
+                                <div class="friends-item__image">
+                                    <img src="img/friends/02.svg" alt="icon">
+                                </div>
+                                <div class="friends-item__title">
+                                    <h3>Meat</h3>
+                                </div>
+                                <div class="friends-item__text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                    elit. Autvoluptas eos eligendi sequi omnis distinctio odio repellat iste repudiandae
+                                    vitae.</div>
+                            </div>
+                        </div>
+                        <div class="friends-column">
+                            <div class="friends-item">
+                                <div class="friends-item__image">
+                                    <img src="img/friends/03.svg" alt="icon">
+                                </div>
+                                <div class="friends-item__title">
+                                    <h3>Drinks</h3>
+                                </div>
+                                <div class="friends-item__text">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                    elit. Dignissimos molestias quaerat quisquam.</div>
+                            </div>
+                        </div>
+                        <div class="friends-column">
+                            <div class="friends-item">
+                                <div class="friends-item__image">
+                                    <img src="img/friends/04.svg" alt="icon">
+                                </div>
+                                <div class="friends-item__title">
+                                    <h3>Vegetables</h3>
+                                </div>
+                                <div class="friends-item__text">Lorem ipsum, dolor sit amet consectetur adipisicing amet
+                                    consectetur adipisicing elit elit.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts-top">
+                        <div class="contacts-top__title">
+                            <h3>Say hello</h3>
+                        </div>
+                        <div class="contacts-top-row">
+                            <div class="contacts-top-column">
+                                <div class="contacts-top-item">
+                                    <div class="contacts-top-item__icon">
+                                        <span class="_icon-map"></span>
+                                    </div>
+                                    <div class="contacts-top-item__text">Lorem ipsum dolor sit amet consectetur.</div>
+                                </div>
+                            </div>
+                            <div class="contacts-top-column">
+                                <a href="mailto:contacts@sitename.com" class="contacts-top-item">
+                                    <div class="contacts-top-item__icon">
+                                        <span class="_icon-email"></span>
+                                    </div>
+                                    <div class="contacts-top-item__text">contacts@sitename.com</div>
+                                </a>
+                            </div>
+                            <div class="contacts-top-column">
+                                <a href="tel:777345543" class="contacts-top-item">
+                                    <div class="contacts-top-item__icon">
+                                        <span class="_icon-phone"></span>
+                                    </div>
+                                    <div class="contacts-top-item__text">(777)-345-543</div>
+                                </a>
+                            </div>
+                            <div class="contacts-top-column">
+                                <div class="contacts-top-social">
+                                    <a href="#" class="contacts-top-social__icon">
+                                        <span class="_icon-facebook"></span>
+                                    </a>
+                                    <a href="#" class="contacts-top-social__icon">
+                                        <span class="_icon-instagram"></span>
+                                    </a>
+                                    <a href="#" class="contacts-top-social__icon">
+                                        <span class="_icon-twitter"></span>
+                                    </a>
+                                    <a href="#" class="contacts-top-social__icon">
+                                        <span class="_icon-google"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-content">
+                        <div class="contacts-content-column">
+                            <div class="contacts-content-map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325187.6432900182!2d-73.99302627111346!3d40.77929771010743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1673607677972!5m2!1sru!2sua"></iframe>
+                            </div>
+                        </div>
+                        <div class="contacts-content-column">
+                            <div class="contacts-content-form">
+                                <div class="contacts-content-form__title">Get in touch</div>
+                                <form action="#" method="post" name="contactForm" class="contacts-content-form-body">
+                                    <div class="contacts-content-form-line">
+                                        <input autocomplete="off" placeholder="Name" type="text" name="userName"
+                                            class="input _req">
+                                    </div>
+                                    <div class="contacts-content-form-line">
+                                        <input autocomplete="off" placeholder="E-mail" type="email" name="userEmail"
+                                            class="input _req _email">
+                                    </div>
+                                    <div class="contacts-content-form-line">
+                                        <textarea autocomplete="off" placeholder="Your message" name="userMessage"
+                                            class="input _req"></textarea>
+                                    </div>
+                                    <div class="contacts-content-form-button">
+                                        <button type="submit" class="btn btn_white">Send message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-body">
+                    <div class="footer-body-text">&copy; Copyright all rights reserved.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230126191318"></script>
+    <script src="js/app.min.js?_v=20230126191318"></script>
+</body>
+
+</html>
